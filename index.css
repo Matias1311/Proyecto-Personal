@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    --primary-color: lightgreen;
+    --secondary-color: green;
+    --third-color: darkgreen;
+}
+/* body {
+    overflow: hidden;
+} */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        bottom: -10vh;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+@keyframes slide-down {
+    0% {
+        opacity: 0;
+        bottom: 10vh;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+h4 {
+    font-size: 1.3em;
+}
+.head {
+    height: 110vh;
+
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,1) 100%);
+}
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+.header-background {
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    
+    width: 100%;
+    height: 80px;
+    position: relative;
+    opacity: 0;
+    animation: slide-down 1.5s ease-out 1s 1 normal forwards;
+    z-index: 2;
+}
+.header {
+    height: 80px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    color: white;
+    z-index: 2;
+}
+h1 {
+    font-size: 1.75em;
+}
+.nav-button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-button-list a {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 8px;
+    white-space: nowrap;
+    font-size: .9em;
+    border-radius: 2rem;
+}
+.nav-button-list a:hover {
+    background-color: var(--secondary-color);
+}
+.nav-button-list a:active {
+    background-color: var(--third-color);
+}
+.nav-button-list a:visited {
+    color: white;
+}
+.head-img-container {
+    width: 100%;
+    height: 110vh;
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 90%, rgba(0,0,0,1) 100%);
+    position: absolute;
+    top: 0;
+}
+.head img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    user-select: none;
+}
+.img-desc-wrapper {
+    position: absolute;
+    bottom: 15vh;
+    left: 15vw;
+}
+.img-desc {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vh;
+    background-color: rgba(0, 0, 0, .4);
+    text-align: center;
+    color: white;
+    width: 70vw;
+    padding: 16px;
+    border-radius: 2rem;
+    animation: slide-up 2s ease-out 0s 1 normal forwards;
+}
+.img-desc h2 {
+    font-size: 2.5em;
+}
+
+.content {
+    color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.content-img-container {
+    width: 100%;
+    height: 110vh;
+    position: absolute;
+
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 10%, rgba(0,0,0,0.5) 90%, rgba(0,0,0,.75) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 10%, rgba(0,0,0,0.5) 90%, rgba(0,0,0,.75) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 10%, rgba(0,0,0,0.5) 90%, rgba(0,0,0,.75) 100%);
+}
+.content img {
+    height: 110vh;
+    width: 100%;
+}
+.content-wrapper {
+    position: absolute;
+    bottom: 15vh;
+}
+.content-cont {
+    width: 80vw;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 2em;
+    padding: 16px;
+    box-sizing: border-box;
+}
+.content h3 {
+    margin-bottom: 24px;
+    font-size: 1.75em;
+}
+.content-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 8vw;
+}
+.content-text-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.demo {
+    height: 110vh;
+    position: relative;
+    color: white;
+}
+/* Recordar eliminar img */
+.demo video, .demo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.demo div {
+    position: absolute;
+    bottom: 25vh;
+    left: 10vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .4);
+    border-radius: 2em;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 80vw;
+    text-align: center;
+}
+
+footer {
+    height: 40vh;
+    background: rgb(72,70,109);
+    background: -moz-radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 75%, var(--third-color) 100%);
+    background: -webkit-radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 75%, var(--third-color) 100%);
+    background: radial-gradient(circle, var(--primary-color) 0%, var(--secondary-color) 75%, var(--third-color) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=var(--primary-color),endColorstr=var(--third-color),GradientType=1);
+
+    position: relative;
+}
+.footer-content {
+    color: white;
+    background-color: rgba(0, 0, 0, .65);
+    filter: brightness(75%);
+    height: 100%;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+.footer-text {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 32px);
+    bottom: 4vw;
+}
