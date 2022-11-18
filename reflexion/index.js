@@ -4,7 +4,7 @@ let contentWrapper = document.getElementById("contentWrapper")
 let scrollTime = "2000"
 let denyWait = "1000"
 let currentPosition = 1
-let positions = 5
+let positions = 3
 
 changeSelector()
 
@@ -79,19 +79,11 @@ let contentImgs = document.querySelector(".more-content div")
 
 let content = {
     2: {
-        h3: "Objetivo",
+        h3: "Repercusión en mi persona",
         imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
     },
     3: {
-        h3: "Producto",
-        imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
-    },
-    4: {
-        h3: "Criterios de Logro",
-        imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
-    },
-    5: {
-        h3: "Plan de Acción",
+        h3: "Evaluación del producto",
         imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
     },
 }
