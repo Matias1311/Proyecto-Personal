@@ -4,7 +4,7 @@ let contentWrapper = document.getElementById("contentWrapper")
 let scrollTime = "2000"
 let denyWait = "1000"
 let currentPosition = 1
-let positions = 5
+let positions = 3
 
 changeSelector()
 
@@ -67,55 +67,6 @@ function skipInfo(infoNumber) {
     currentPosition = infoNumber
     contentWrapper.style.top = ((infoNumber-1) * -100).toString() + "vh"
     changeSelector()
-}
-
-
-let b1 = document.getElementById("b1")
-let b2 = document.getElementById("b2")
-
-let moreWrapper = document.getElementById("moreWrapper")
-let contentH3 = document.querySelector(".more-content h3")
-let contentImgs = document.querySelector(".more-content div")
-
-let content = {
-    2: {
-        h3: "Objetivo",
-        imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
-    },
-    3: {
-        h3: "Producto",
-        imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
-    },
-    4: {
-        h3: "Criterios de Logro",
-        imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
-    },
-    5: {
-        h3: "Plan de Acción",
-        imgs: ["https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000", "https://img.freepik.com/premium-vector/documents-confirmed-approved-document_149152-439.jpg?w=2000"],
-    },
-}
-
-function displayInfo(buttonNumber) {
-    contentH3.innerHTML = content[buttonNumber].h3
-
-    while (contentImgs.firstChild) {
-      contentImgs.removeChild(contentImgs.lastChild);
-    }
-    content[buttonNumber].imgs.forEach(imgURL => {
-        let imgElement = document.createElement("img")
-        contentImgs.appendChild(imgElement)
-        imgElement.setAttribute("src", imgURL)
-    });
-
-    moreWrapper.style.opacity = "1"
-    moreWrapper.style.visibility = "visible"
-}
-function closeInfo() {
-    moreWrapper.style.opacity = "0"
-    setTimeout(() => {
-        moreWrapper.style.visibility = "hidden"
-    }, 1500)
 }
 
 

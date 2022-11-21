@@ -118,8 +118,6 @@ function closeInfo() {
     }, 1500)
 }
 
-
-
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
